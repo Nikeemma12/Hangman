@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    color: white;
+    font-family:cursive;
+}
+.body-container {
+    top: 10px;
+    position: relative;
+    justify-self: center;
+    background-color: white;
+    height: 450px;
+    width: 900px;
+    padding: 10px;
+}
+.base {
+    position: relative;
+    top: 400px;
+    height: 20px;
+    width: 600px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: black;
+}
+.stand {
+    position: relative;
+    left: 30px;
+    background-color: black;
+    height: 400px;
+    width: 20px;
+}
+.lever {
+    position: relative;
+    bottom: 400px;
+    background-color: black;
+    width: 500px;
+    height: 20px;
+    z-index: 1;
+}
+.rope {
+    position: relative;
+    left: 400px;
+    bottom: 405px;
+    background-color: hsla(39, 63%, 20%, 0.671);
+    border-radius: 35px;
+    width: 10px;
+    height: 30px;
+}
+.head {
+    display: none;
+    position: relative;
+    left: 365px;
+    bottom: 410px;
+    background-color: hsla(29, 76%, 39%, 0.671);
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+.right-eye{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+}
+.left-eye{
+    position: relative;
+    left: 60px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: black;
+}
+.mouth {
+    rotate: -10deg;
+    position: relative;
+    left: 20px;
+    top: 40px;
+    width: 45px;
+    height: 5px;
+    
+    background-color: black;
+}
+.body {
+    display: none;
+    position: relative;
+    left: 355px;
+    bottom: 410px;
+    background-color: hsl(29, 76%, 39%);
+    border-radius: 15%;
+    width: 100px;
+    height: 110px;
+}
+
+.right-hand{
+    display: none;
+    rotate: 20deg;
+    position: relative;
+    left: 330px;
+    bottom: 500px;
+    background-color: hsla(29, 76%, 39%, 0.671);
+    border-radius: 15%;
+    width: 20px;
+    height: 100px;
+}
+.left-hand {
+    display: none;
+    rotate: -20deg;
+    position: relative;
+    left: 460px;
+    bottom: 600px;
+    background-color: hsla(29, 76%, 39%, 0.671);
+    border-radius: 15%;
+    width: 20px;
+    height: 100px;
+}
+.right-leg{
+    display: none;
+    position: relative;
+    left: 360px;
+    bottom: 612px;
+    background-color: hsla(29, 76%, 39%, 0.671);
+    border-radius: 15%;
+    width: 20px;
+    height: 120px;
+}
+.left-leg{
+    display: none;
+    position: relative;
+    left: 430px;
+    bottom: 731px;
+    background-color: hsla(29, 76%, 39%, 0.671);
+    border-radius: 15%;
+    width: 20px;
+    height: 120px;
+}
+#word {
+    margin-top: 40px;
+    letter-spacing: 50px;
+    justify-self: center;
+}
+.score {
+    display: none;
+    justify-self: center;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border-style: none;
+    z-index:1;
+}
+#score {
+    justify-self: center;
+    border-radius: 15px;
+    border-style: none;
+    color: black;
+    padding: 10px;
+}
+#reset {
+    display: none;
+    justify-self: center;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    background-color: hsla(271, 76%, 53%, 0.541);
+    font-family: cursive;
+    font-size: 18px;
+    transition: box-shadow, 0.3s ease-in 0.5s;
+}
+#reset:active {
+    background-color: hsla(271, 76%, 53%, 0.199);
+}
+#reset:hover {
+    box-shadow: 8px 8px 10px hsla(271, 76%, 53%, 0.199);;
+}
+#diff{
+    font-size: 25px;
+    justify-self: center;
+}
+.mode {
+    margin-top: 20px;
+    justify-self: center;
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: cursive;
+    font-size: 18px;
+    transition: box-shadow, 0.3s ease-in 0.5s;
+
+}
+.difficulty {
+    justify-self: center;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    background-color: hsl(271, 76%, 53%);
+    font-family: cursive;
+    font-size: 18px;
+}
+.difficulty:active{
+    background-color: hsla(271, 14%, 36%, 0);
+}
+.general {
+    display: none;
+}
+.hint {
+    margin-top: 50px;
+    margin-left: 750px;
+    border-radius: 15px;
+    border-style: none;
+    padding: 10px;
+    background-color: hsl(271, 76%, 53%);
+    font-family: cursive;
+    font-size: 18px;
+}
+.hint:active {
+    background-color: hsla(271, 14%, 36%, 0);
+}
+#hint {
+    display: none;
+    margin-bottom: 0;
+    margin-top: 40px;
+    justify-self: center;
+    color: white;
+}

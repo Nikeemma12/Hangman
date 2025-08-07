@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="hang.css">
+</head>
+<body>
+    <p id="diff">Choose your difficulty</p>
+    <div class="mode">
+        <button type="button" class="difficulty" onclick="start('EASY')">Easy</button>
+        <button type="button" class="difficulty" onclick="start('MEDIUM')">Medium</button>
+        <button type="button" class="difficulty" onclick="start('HARD')">Hard</button>
+    </div>
+    <div class="general">
+        <div class="body-container">
+            <div class="base"></div>
+            <div class="stand"></div>
+            <div class="lever"></div>
+            <div class="rope"></div>
+            <div class="parts">
+                <div class="head" id="head">
+                    <div class="left-eye"></div>
+                    <div class="right-eye"></div>
+                    <div class="mouth"></div>
+                </div>
+                <div class="body" id="body"></div>
+                <div class="right-hand" id="right-hand"></div>
+                <div class="left-hand" id="left-hand"></div>
+                <div class="right-leg" id="right-leg"></div>
+                <div class="left-leg" id="left-leg"></div>
+            </div>
+        </div>
+        <div><p id="word"></p></div>
+        <div><p id="hint"></p></div>
+        <button class="hint" onclick="hint()">Hint</button>
+        <div class="score">
+            <p id="score"></p>
+        </div>
+        <button type="button" id="reset" onclick = "playagain()">Play again</button>
+    </div>
+    <script src="hang.js"></script>
+</body>
+</html>
